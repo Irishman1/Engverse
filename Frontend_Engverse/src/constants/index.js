@@ -7,28 +7,7 @@ import MutedIcon from '../assets/hud/muted.svg';
 import CrossIcon from '../assets/hud/cross.svg';
 import HeartIcon from '../assets/hud/heart.png';
 
-export const DEVELOPERS = [
-  {
-    "fullname": "Иван Михальченко",
-    "github": "https://github.com/spaceragga"
-  },
-  {
-    "fullname": "Алексей Булгак",
-    "github": "https://github.com/aleksei-bulgak-study"
-  },
-  {
-    "fullname": "Николай Волженин",
-    "github": "https://github.com/Kvadeck"
-  },
-  {
-    "fullname": "Наталья Эйн",
-    "github": "https://github.com/natein"
-  },
-  {
-    "fullname": "Александр Кудрявцев",
-    "github": "https://github.com/kvalexandr"
-  }
-];
+
 
 export const SECTIONS_EBOOK = [
   {

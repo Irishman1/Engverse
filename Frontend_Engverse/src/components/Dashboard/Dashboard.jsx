@@ -156,7 +156,7 @@ function Dashboard(props) {
                         <MenuIcon />
                     </IconButton>
                     <Logo onClick={() => history.push('/')} component='span' className={classes.logo}>
-                       Engverse
+                        Engverse
                     </Logo>
                     <TransitionsModal />
                 </Toolbar>

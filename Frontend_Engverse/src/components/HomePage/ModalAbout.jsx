@@ -3,10 +3,9 @@ import React, { useState } from 'react';
 import Button from './Button';
 
 import { makeStyles } from '@material-ui/core/styles';
-import { useHistory } from 'react-router';
 import CardsAbout from './ModalAboutCard';
 import CardsVideo from './ModalAboutVideo';
-import CardActionArea from '@material-ui/core/CardActionArea';
+
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -47,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ModalInfo() {
     const classes = useStyles();
-    const history = useHistory();
+
 
     const [check, setCheck] = useState(true);
 
@@ -59,20 +58,10 @@ export default function ModalInfo() {
                 индивидуального прогресса и мини-игр.
             </p>
             <div className={classes.contAbout}>
-                {check ? <CardsAbout /> : <CardsVideo /> }
+                {check ? <CardsAbout /> : <CardsVideo />}
             </div>
 
-            <Button
-                color="primary"
-                variant="outlined"
-                size="small"
-                className={classes.button}
-                component="a"
-                onClick={() => history.push('/about')}
-            >
-                <CardActionArea />
-                Разработчики
-            </Button>
+
             <Button
                 color="primary"
                 variant="outlined"

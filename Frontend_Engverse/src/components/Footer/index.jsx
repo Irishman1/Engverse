@@ -2,8 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import img from '../../assets/rs_school_1.svg';
-import { DEVELOPERS } from '../../constants';
+
 
 const useStyles = makeStyles((theme) => ({
     footer: {
@@ -57,11 +56,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const DeveloperElement = ({ className, github, fullname }) => (
-    <a className={className} target="_blank" rel="noreferrer" href={github}>
-        {fullname}
-    </a>
-);
+
 
 function Footer() {
     const classes = useStyles();
@@ -71,23 +66,10 @@ function Footer() {
             <Container maxWidth="lg" className={classes.footerContainer}>
                 <Grid container>
                     <Grid item xs={12} md={2} className={classes.logo}>
-                        <a target="_blank" rel="noreferrer" href="https://rs.school/react/">
-                            <img className={classes.logoPick} src={img} alt="RSS" />
-                        </a>
+
                     </Grid>
-                    <Grid item xs={12} md={8} className={classes.gitHubList}>
-                        {DEVELOPERS.map((developer, i) => (
-                            <DeveloperElement
-                                key={i.toString()}
-                                className={classes.gitHubLink}
-                                fullname={developer.fullname}
-                                github={developer.github}
-                            />
-                        ))}
-                    </Grid>
-                    <Grid item xs={12} md={2} className={classes.date}>
-                        {new Date().getFullYear()}
-                    </Grid>
+
+
                 </Grid>
             </Container>
         </footer>

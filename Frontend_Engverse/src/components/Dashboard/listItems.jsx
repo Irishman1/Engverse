@@ -6,7 +6,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import LanguageIcon from '@material-ui/icons/Language';
-import PeopleIcon from '@material-ui/icons/People';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
@@ -61,14 +60,7 @@ export const mainListItems = (
                 <ListItemText primary="Статистика" />
             </ListItem>
         </Link>
-        <Link to="/about" style={link}>
-            <ListItem button>
-                <ListItemIcon>
-                    <PeopleIcon />
-                </ListItemIcon>
-                <ListItemText primary="О команде" />
-            </ListItem>
-        </Link>
+
         <Link to="/review" style={link}>
             <ListItem button>
                 <ListItemIcon>
