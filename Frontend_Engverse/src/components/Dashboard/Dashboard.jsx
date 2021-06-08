@@ -20,7 +20,6 @@ import EbookPage from '../../pages/EbookPage';
 import TransitionsModal from './UserIcon';
 import LoginPage from '../LoginPage/LoginPage';
 import SignupPage from '../LoginPage/SingupPage';
-import AboutTeam from '../AboutTeam';
 import SprintPage from '../../pages/SprintPage';
 import GamesPage from '../../pages/GamesPage';
 import AudioCallPage from '../../pages/AudioCallPage';
@@ -198,7 +197,6 @@ function Dashboard(props) {
                         <Route path="/dictionary" component={DictionaryPage} />
                         <Route path="/games" component={GamesPage} exact />
                         <Route path="/statistics" component={StatisticsPage} />
-                        <Route path="/about" component={AboutTeam} />
                         <Route path="/login" component={LoginPage} />
                         <Route path="/sign-up" component={SignupPage} />
                         <Route path="/review" component={ReviewPage} />
