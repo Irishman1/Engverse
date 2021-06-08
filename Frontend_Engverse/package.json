@@ -37,6 +37,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "concurrently  \"cd Frontend_Engverse && npm start\" \"cd src/mini_games/game1 && npm start\" ",
+
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
