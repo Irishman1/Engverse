@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn english!</title>
+    <link rel="shortcut icon" href="<%=require('./assets/images/favicon.png')%>" type="image/png">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__content">
+          <div class="burger-menu">
+            <div id="burger-button" class="burger-menu__button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav id="burger-menu" class="burger-menu__nav blue-gradient">
+              <ul>
+                <li><a class="active" href="">Main Page</a></li>
+                <li class="link">Actions (set A)</li>
+                <li class="link">Actions (set B)</li>
+                <li class="link">Animals (set A)</li>
+                <li class="link">Animals (set B)</li>
+                <li class="link">Clothes</li>
+                <li class="link">Emotions</li>
+                <li class="link">Food</li>
+                <li class="link">Sports</li>
+                <li class="link statistics-link">Statistics</li>
+              </ul>
+            </nav>
+          </div>
+          <div id="mode" class="mode">
+            <div id="mode__inner" class="mode__inner blue-gradient">
+              <span id="mode__text" class="mode__text">TRAIN</span>
+              <span id="mode__toggle" class="mode__toggle"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="categories">
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/fish.jpg')%>"
+              />
+              <div class="category__name">Actions (set A)</div>
+            </div>
+          </a>
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/swim.jpg')%>"
+              />
+              <div class="category__name">Actions (set B)</div>
+            </div>
+          </a>
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/sheep.jpg')%>"
+              />
+              <div class="category__name">Animals (set A)</div>
+            </div>
+          </a>
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/giraffe.jpg')%>"
+              />
+              <div class="category__name">Animals (set B)</div>
+            </div>
+          </a>
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/skirt.jpg')%>"
+              />
+              <div class="category__name">Clothes</div>
+            </div>
+          </a>
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/happy.jpg')%>"
+              />
+              <div class="category__name">Emotions</div>
+            </div>
+          </a>
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/cake.jpg')%>"
+              />
+              <div class="category__name">Food</div>
+            </div>
+          </a>
+          <a class="category">
+            <div class="gradient blue-gradient"></div>
+            <div class="category__desc">
+              <img
+                class="category__image"
+                src="<%=require('./assets/images/skiing.jpg')%>"
+              />
+              <div class="category__name">Sports</div>
+            </div>
+          </a>
+        </div>
+        <div class="rate hidden"></div>
+        <div class="cards hidden"></div>
+        <div class="button-container">
+          <button class="start-game-button hidden">
+            Start Game
+          </button>
+          <button class="repeat-button hidden">
+            ⟳
+          </button>
+        </div>
+        <div class="result-page hidden">
+          <div class="result-page_error hidden">
+            <div class="errors"></div>
+            <img src="<%=require('./assets/images/failure.gif')%>" />
+            <audio src="<%=require('./assets/audio/failure.mp3')%>"></audio>
+          </div>
+          <div class="result-page_success hidden">
+            <img src="<%=require('./assets/images/success.gif')%>" />
+            <audio src="<%=require('./assets/audio/success.mp3')%>"></audio>
+          </div>
+        </div>
+        <div class="statistics hidden">
+          <div class="statistics__buttons">
+            <button class="reset-button blue-gradient">Reset</button>
+          </div>
+          <table class="blue-gradient">
+            <thead>
+              <tr>
+                <th class="sort-by-name">
+                  word<br />
+                  <span class="sort-buttons">
+                    <span class="sort-button alphabet-sort">▲</span>
+                    <span class="sort-button alphabet-sort-reverse">▼</span>
+                  </span>
+                </th>
+                <th class="sort-by-category">
+                  category<br />
+                  <span class="sort-buttons">
+                    <span class="sort-button alphabet-sort">▲</span>
+                    <span class="sort-button alphabet-sort-reverse">▼</span>
+                  </span>
+                </th>
+                <th class="sort-by-translation">
+                  translation<br />
+                  <span class="sort-buttons">
+                    <span class="sort-button alphabet-sort">▲</span>
+                    <span class="sort-button alphabet-sort-reverse">▼</span>
+                  </span>
+                </th>
+                <th class="sort-by-train">
+                  train<br />
+                  <span class="sort-buttons">
+                    <span class="sort-button numerical-sort">▲</span>
+                    <span class="sort-button numerical-sort-reverse">▼</span>
+                  </span>
+                </th>
+                <th class="sort-by-correct">
+                  correct<br />
+                  <span class="sort-buttons">
+                    <span class="sort-button numerical-sort">▲</span>
+                    <span class="sort-button numerical-sort-reverse">▼</span>
+                  </span>
+                </th>
+                <th class="sort-by-wrong">
+                  wrong<br />
+                  <span class="sort-buttons">
+                    <span class="sort-button numerical-sort">▲</span>
+                    <span class="sort-button numerical-sort-reverse">▼</span>
+                  </span>
+                </th>
+                <th class="sort-by-percent">
+                  correct, %<br />
+                  <span class="sort-buttons">
+                    <span class="sort-button numerical-sort">▲</span>
+                    <span class="sort-button numerical-sort-reverse">▼</span>
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
