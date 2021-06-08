@@ -1,0 +1,50 @@
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    height: min-content;
+}
+
+.letter-tiles {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    position: relative;
+    bottom: 400px;
+    left: 240px;
+}
+
+img {
+    width: auto;
+    height: 600px;
+    z-index: 0;
+}
+
+#game-prompt {
+    background-color: rgba(254, 255, 254, 0.587);
+    z-index: 1;
+    position: absolute;
+    padding-bottom: 20px;
+    top: 650px;
+    width: 1050px;
+}
+
+#find-letter-prompt {
+    font-size: 28px;
+}
+input {
+    display: none;
+}
+
+input:checked + img {
+    border: white;
+}
+
+input + img:hover {
+    height: 120px;
+    width: 120px;
+}

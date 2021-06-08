@@ -1,0 +1,122 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    --color1: #fff07cff;
+    --color2: #80ff72ff;
+    --color3: #7ee8faff;
+    --color4: #eec0c6ff;
+    --color5: #e58c8aff;
+    --color6: #f5edda;
+    
+    font-family: 'Patrick Hand', cursive;
+    background-color: var(--color6);
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin: 20px;
+    padding: 10px;
+}
+
+h1 {
+    font-family: 'Rowdies', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+nav {
+    margin: 10px;
+    background-color: white;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+a:hover {
+    background-color: white;
+    
+}
+
+a:hover:visited {
+    pointer-events: none; 
+    cursor: default; 
+    background-color: var(--color5);
+    pointer-events: none; 
+    cursor: default; 
+}
+
+p {
+    font-family: 'Rowdies', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+main {
+    background-color: white;
+    width: 90vw;
+    min-width: min-content;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+img {
+    height: 200px;
+}
+
+.user-info-divs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    height: 1.8rem;
+    width: 4rem;
+}
+
+button:hover {
+    background-color: var(--color5);
+}
+
+input:checked + img {
+    border: solid 5px black;
+    border-radius: 5px;
+}
+
+.pack-div { 
+    display: none;
+}

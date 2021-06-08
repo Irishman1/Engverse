@@ -1,0 +1,33 @@
+header {
+    font-family: 'Rowdies', cursive;
+    font-size: 48px;
+}
+
+main {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+img {
+    height: auto;
+    width: 600px;
+    justify-content: flex-end;
+}
+
+.completed-letters, div {
+    z-index: 1;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+    position: relative;
+    bottom: 400px;
+    left: 120px;
+    width: min-content;
+}
+
+div {
+    width: 250px;
+    bottom: 500px;
+    left: 320px;
+}
