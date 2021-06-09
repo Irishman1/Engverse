@@ -60,6 +60,7 @@ export const mainListItems = (
                 <ListItemText primary="Статистика" />
             </ListItem>
         </Link>
+       
 
         <Link to="/review" style={link}>
             <ListItem button>
