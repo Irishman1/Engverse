@@ -75,7 +75,7 @@ export const mainListItems = (
             </ListItem>
         </Link>
 
-        <a rel="noreferrer" href="https://2-five-delta.vercel.app/">
+        <a rel="noreferrer" href="https://epic-beaver-600ea5.netlify.app/">
             <ListItem button>
                 <ListItemIcon>
                     <EmojiPeopleIcon />
