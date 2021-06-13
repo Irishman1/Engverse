@@ -239,20 +239,10 @@ class App extends React.Component {
           this.setState({ typeDictionary: 'English' })
         else this.setState({ typeDictionary: '' })
       }
-      if (keyType === '3') {
-        if (typeDictionary !== 'Vietnam')
-          this.setState({ typeDictionary: 'Vietnam' })
-        else this.setState({ typeDictionary: '' })
-      }
+     
     }
 
-    if (typingMode === 'Full Sentence') {
-      if (keyType === '1') {
-        if (typeDictionary !== 'Vietnam')
-          this.setState({ typeDictionary: 'Vietnam' })
-        else this.setState({ typeDictionary: '' })
-      }
-    }
+    
   }
 
   handleUpdateTyping = (newWord, newCurrentCorrect) => {
