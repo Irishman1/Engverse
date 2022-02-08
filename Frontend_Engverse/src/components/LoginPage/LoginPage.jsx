@@ -94,8 +94,8 @@ const LoginPage = ({ user, error, onLogin, loader }) => {
             <div className={classes.paper}>
                 <Typography component="h1" variant="h5" style={{ color: 'white' }}>
                     Вход в аккаунт
-                    e-mail:sas@gmail.com
-                    password: Irishman1+
+                  <p>  e-mail:sas@gmail.com</p>
+                  <p> password: Irishman1+</p>
                 </Typography>
                 <form className={classes.form} onSubmit={handleSubmit}>
                     <ThemeProvider theme={theme}>
